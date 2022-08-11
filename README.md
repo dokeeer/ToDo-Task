@@ -1,5 +1,5 @@
 # Todo App
-Todo app with adding, editing and deleting ToDos.
+Todo app with functions of adding, editing and deleting ToDos.
 
 ### Prerequisites
 
