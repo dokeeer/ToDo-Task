@@ -6,7 +6,7 @@ Todo app with functions of adding, editing and deleting ToDos.
 
 
 ```
-Node.js 14+ (for using Vite)
+Node.js
 ```
 
 ## Deployment
