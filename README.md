@@ -11,7 +11,7 @@ Node.js 14+ (for using Vite)
 
 
 ```
-npm run dev
+npm start
 ```
 
 
