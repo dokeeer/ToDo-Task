@@ -1,5 +1,5 @@
-# React-MemeGenerator
-ToDo app.
+# Todo App
+Todo app with functions of adding, editing and deleting ToDos.
 
 ### Prerequisites
 
