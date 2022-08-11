@@ -66,13 +66,14 @@ function Main() {
 
     function newTodo(e) {
         setTodoList(prev=>{
-            return [...prev,
+            return [
                 {
                     title: newTodoName,
                     description: `It is my ${prev.length+1} ToDo`,
                     id: randomKeyGenerator(),
                     stateTodo: 'waiting',
-                }]
+                }, ...prev,
+            ]
         })
         setNewTodoName('New ToDo')
         e.preventDefault()
