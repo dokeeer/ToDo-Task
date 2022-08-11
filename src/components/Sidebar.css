@@ -1,0 +1,139 @@
+.current {
+    background: black;
+    color:black;
+    border: 2px solid lightgray;
+}
+
+.todo--object {
+    height:30px;
+    -webkit-box-shadow: 0px 9px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 9px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 9px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-bottom:20px;
+    border-radius: 5px;
+    width:100%;
+    padding:10px 0px 10px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-items: center;
+    border-right:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+.todo--object:hover {
+    cursor: pointer;
+}
+
+
+.newtodo {
+    height:40px;
+    position: relative;
+    padding-left:10px;
+}
+
+.newtodo--button {
+    height:31.5px;
+    width: 30px;
+    right:0;
+    position: absolute;
+    top:2px;
+    background: #2a8d9c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.newtodo--button:hover {
+    cursor: pointer;
+}
+
+.todo--list {
+    position: absolute;
+    overflow: scroll;
+    left: 20px;
+    top:130px;
+    bottom: 28px;
+    right: 10px;
+    overflow-x:hidden;
+    padding-right:10px;
+    border-bottom-left-radius:40px;
+}
+
+.todo--list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.todo--list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #2a8d9c;
+}
+
+.todo--list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #4a4446;
+}
+
+.todos--holder {
+
+}
+
+.todo--comp {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.newtodo--input {
+    margin-top:2px;
+    width: 85%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-top-left-radius: 50px;
+    border: none;
+    font-family: 'Roboto Slab', serif;
+    font-size:16px;
+    background: #282c34;
+    color: lightgray;
+    outline: none;
+}
+
+.newtodo--input:active {
+    border:none
+}
+
+
+.todo--delete {
+    height:50px;
+    width:30px;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    padding-left:0px;
+}
+
+.find--todo {
+    padding-left:10px;
+    width:90%;
+    font-family: 'Roboto Slab';
+    margin-left:10px;
+    background: #282c34;
+    border:none;
+    border-radius: 5px;
+    color: lightgray;
+    outline: none;
+}
+
+.find--prompt {
+    text-align: center;
+    margin-bottom:5px;
+    font-size:20px;
+}
+
+.todo--delete:hover {
+    cursor:pointer;
+}

@@ -1,0 +1,67 @@
+.todo--holder {
+    margin-top:1vh;
+    width: 100vh;
+    background: #20232a;
+    height: 80vh;
+    display: flex;
+    border-radius: 50px;
+    color:white;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab'
+
+}
+
+.todo--sidebar {
+    padding: 20px 10px;
+    position: relative;
+}
+
+.todo--edit {
+    width: 100%;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.border {
+    border: 5px solid #4a4446;
+    cursor: ew-resize;
+}
+
+.greetings {
+    width: 100vh;
+    background: #20232a;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:1vh;
+    border-radius: 50px;
+    color:white;
+}
+
+.greetings--button {
+    margin-top: 40px;
+    width: 120px;
+    height:40px;
+    font-family: 'Roboto Slab', serif;
+    background: #282c34;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.greetings--button:hover {
+    cursor: pointer;
+}
+
+.prompt {
+    padding: 20px 40px;
+    background: #282c34;
+    border-radius: 10px;
+}
