@@ -27,7 +27,6 @@
     cursor: pointer;
 }
 
-
 .newtodo {
     height:40px;
     position: relative;
@@ -79,10 +78,6 @@
     background-color: #4a4446;
 }
 
-.todos--holder {
-
-}
-
 .todo--comp {
     display: flex;
     flex-direction: row;
@@ -106,7 +101,6 @@
 .newtodo--input:active {
     border:none
 }
-
 
 .todo--delete {
     height:50px;
