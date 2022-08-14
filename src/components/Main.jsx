@@ -25,9 +25,6 @@ function Main() {
     if (localStorage.getItem('todoList') === null)
         localStorage.setItem('todoList', JSON.stringify([]))
 
-    if (localStorage.getItem('currentTodo') === null || JSON.parse(localStorage.getItem('todoList')) === [])
-        localStorage.setItem('currentTodo', JSON.stringify({}))
-
     //States for list of existing ToDos, for current ToDo
     //and ToDos that user wants to find
 
@@ -36,7 +33,7 @@ function Main() {
     )
 
     const [currentTodo, setCurrentTodo] = React.useState(
-        (JSON.parse(localStorage.getItem('currentTodo')))
+        todoList.length > 0? todoList[0] : {}
     )
 
     const [findTodoList, setFindTodoList] = React.useState(todoList)
@@ -111,7 +108,6 @@ function Main() {
 
     function setCurrent(id) {
         setCurrentTodo(findCurrent(id))
-        localStorage.setItem('currentTodo', JSON.stringify(findCurrent(id)))
     }
 
     //Handler of clicking on the resizing bar to find out
@@ -189,7 +185,6 @@ function Main() {
         setFindTodoList(todoList.filter(todo => {
             return (todo.title.toLowerCase().includes(findCrit))
         }))
-        localStorage.setItem('currentTodo', JSON.stringify(currentTodo))
     }, [todoList])
 
     //Hook created to prevent choosing ToDo that is not in list of
