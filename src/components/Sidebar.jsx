@@ -29,6 +29,7 @@ const Sidebar = (props) => {
                 todos={props.todos}
                 currentTodo={props.currentTodo}
                 setCurrent={props.setCurrent}
+                delete={props.delete}
             />
             </div>
         </div>
